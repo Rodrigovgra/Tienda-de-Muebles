@@ -1,0 +1,22 @@
+@mixin botons {
+    background-color: $botonColor;
+    color: $colorWhite;
+}
+  
+@mixin botonsHover {
+    background-color: $botonHover;
+    color: $colorWhite;
+}
+
+@mixin cuentaCarritoTexto {
+    font-style: inherit;
+    font-size: 1.5vw;
+    color: $colorIconos;
+    text-decoration: none;
+}
+
+@mixin center {
+    align-items: center;
+    justify-content: center;
+}
+  

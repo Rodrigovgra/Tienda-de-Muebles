@@ -1,0 +1,28 @@
+/* BASE */
+html, body{ 
+    width: 100% !important;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $bodyColor;
+    background-size: 100%;
+    text-align: center;
+    width: 100%;
+}
+.h2Titulo {
+    background-color: $colorH2Footer;
+    color: $colorWhite;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    h1 {
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 767px) {
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

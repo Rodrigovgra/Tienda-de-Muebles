@@ -1,0 +1,48 @@
+    /* CONTACTO */
+    .horarios-numero {
+        background-color: rgba(68, 68, 68, 0.774);
+        color: $colorWhite;
+        display: flex;
+        @include center;
+        text-align: center;
+        font-weight: bold;
+        padding: 1rem;
+        margin: 0;
+
+        .numero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .form-label {
+        margin-bottom: 0;
+    }
+
+    #form {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+
+        .form {
+            width: 70%;
+            .mb-3 {
+                height: 80px;
+            }
+            .boton {
+                margin-top: 2rem;
+                padding: 0.5rem;
+                border: none;
+                width: 100%;
+                @include botons;
+                font-weight: bold;
+
+                &:hover {
+                    @include botonsHover;
+                }
+            }
+        }
+    }

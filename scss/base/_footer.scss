@@ -1,0 +1,23 @@
+/* FOOTER */
+.footer {
+    background-color: $colorH2Footer;
+    color: $colorWhite;
+    font-weight: bold;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .redesP {
+      transition: transform 1s;
+
+      &:hover{
+        transform: scale(1.1,1.1);
+      }
+      .redes {
+        text-align: center;
+      }
+    }
+  }
+  

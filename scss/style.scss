@@ -1,0 +1,13 @@
+/* VARIABLES */
+@import "variables";
+
+/* MIXIN */
+@import "mixin";
+
+/* BASE */
+@import "base/fuentes", "base/general", "base/header", "base/footer";
+
+/* PAGES */
+@import "pages/home/home", "pages/home/carousel", "pages/productos", "pages/sucursales", "pages/contacto";
+
+

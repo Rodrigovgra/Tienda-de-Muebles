@@ -1,0 +1,174 @@
+/* HEADER */
+.container-fluid {
+    background-size: 100%;
+  }
+  
+  .logo {
+    width: 40vw;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .form-control, .btn {
+    border-radius: 6px;
+  }
+  
+  .searchBar {
+    padding: 0px;
+  }
+  
+  .ingreso {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+  
+    :hover {
+      color: $colorBlack;
+    }
+  }
+  
+  .miCuenta {
+    padding-right: 9px;
+    display: inline-block;
+  }
+  
+  .miCuentaT {
+    @include cuentaCarritoTexto;
+  }
+  
+  .miCarrito {
+    padding-left: 9px;
+    display: inline-block;
+  }
+  
+  .miCarritoT {
+    @include cuentaCarritoTexto;
+  }
+  
+  .menuBar {
+    background-color: $botonColor;
+  }
+  
+  .nav-link {
+    color: $colorWhite;
+    font-size: 1.1rem;
+  }
+  
+  .active {
+    background-color: rgba(80, 79, 79, 0.774) !important;
+  }
+  
+  .menuBar {
+    li a {
+      transition: transform 1s;
+
+      &:hover {
+      background-color: rgb(158, 157, 157);
+      color: rgb(250, 239, 226);
+      transform: scale(1.05,1.05);
+      border-radius: 5px;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .separador1, .separador2, .miCuenta, .miCarritoT, .menuBar {
+      display: none;
+    }
+  
+    .navbar {
+      grid-area: navbar;
+    }
+  
+    .text {
+      color: $colorBlack;
+    }
+  
+    .logo {
+      grid-area: logo;
+    }
+  
+    .aver {
+      text-align: center;
+      justify-content: center !important;
+    }
+  
+    .miCarrito {
+      grid-area: micarrito;
+      padding-left: 0px;
+    }
+  
+    .ingreso {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .searchBar {
+      grid-area: searchbar;
+    }
+  
+    .row {
+      display: grid;
+      grid-template-areas: "navbar logo logo micarrito" "searchbar searchbar searchbar searchbar";
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .separador1 {
+      grid-area: separador1;
+    }
+  
+    .separador2 {
+      grid-area: separador2;
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .logo {
+      grid-area: logo;
+      width: 30vw;
+    }
+  
+    .searchBar {
+      grid-area: searchbar;
+      padding-top: 15px;
+    }
+  
+    .ingreso {
+      grid-area: cuentcar;
+      display: block;
+    }
+  
+    .miCarrito {
+      grid-area: micarrito;
+    }
+  
+    .miCuenta {
+      grid-area: micuenta;
+    }
+  
+    .row {
+      display: grid;
+      grid-template-areas: "logo separador1 searchbar separador2 cuentcar";
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .navbar {
+      display: none;
+    }
+  
+    .searchBar {
+      padding-left: 30px;
+      padding-top: 15px;
+    }
+  
+    .logo {
+      width: 23vw;
+    }
+  }
+  
+
+

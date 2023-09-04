@@ -1,0 +1,23 @@
+/* PRODUCTOS */
+  .rowProductos1, .rowProductos2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+  .card {
+    margin: 0.5rem;
+    transition: transform 1s;
+
+    &:hover{
+      transform: scale(1.03,1.03);
+    }
+  }
+  
+  .colorBtn {
+    @include botons;
+  
+    &:hover {
+      @include botonsHover;
+    }
+  }
+  
