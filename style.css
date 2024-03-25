@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.fuentes {
+  font-size: 1.13rem;
+  font-weight: bold;
+}
+
+/* BASE */
+html, body {
+  width: 100% !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ddcdc4;
+  background-size: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.h2Titulo {
+  background-color: #4b3939;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.h2Titulo h1 {
+  font-weight: 600;
+}
+
+@media (min-width: 767px) {
+  .row2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* HEADER */
+.container-fluid {
+  background-size: 100%;
+}
+
+.logo {
+  width: 40vw;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.form-control, .btn {
+  border-radius: 6px;
+}
+
+.searchBar {
+  padding: 0px;
+}
+
+.ingreso {
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+}
+.ingreso :hover {
+  color: black;
+}
+
+.miCuenta {
+  padding-right: 9px;
+  display: inline-block;
+}
+
+.miCuentaT {
+  font-style: inherit;
+  font-size: 1.5vw;
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+}
+
+.miCarrito {
+  padding-left: 9px;
+  display: inline-block;
+}
+
+.miCarritoT {
+  font-style: inherit;
+  font-size: 1.5vw;
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+}
+
+.menuBar {
+  background-color: #5b605f;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.active {
+  background-color: rgba(80, 79, 79, 0.774) !important;
+}
+
+.menuBar li a {
+  transition: transform 1s;
+}
+.menuBar li a:hover {
+  background-color: rgb(158, 157, 157);
+  color: rgb(250, 239, 226);
+  transform: scale(1.05, 1.05);
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .separador1, .separador2, .miCuenta, .miCarritoT, .menuBar {
+    display: none;
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .text {
+    color: black;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .aver {
+    text-align: center;
+    justify-content: center !important;
+  }
+  .miCarrito {
+    grid-area: micarrito;
+    padding-left: 0px;
+  }
+  .ingreso {
+    text-align: center;
+    padding: 0;
+  }
+  .searchBar {
+    grid-area: searchbar;
+  }
+  .row {
+    display: grid;
+    grid-template-areas: "navbar logo logo micarrito" "searchbar searchbar searchbar searchbar";
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .separador1 {
+    grid-area: separador1;
+  }
+  .separador2 {
+    grid-area: separador2;
+  }
+  .navbar {
+    display: none;
+  }
+  .logo {
+    grid-area: logo;
+    width: 30vw;
+  }
+  .searchBar {
+    grid-area: searchbar;
+    padding-top: 15px;
+  }
+  .ingreso {
+    grid-area: cuentcar;
+    display: block;
+  }
+  .miCarrito {
+    grid-area: micarrito;
+  }
+  .miCuenta {
+    grid-area: micuenta;
+  }
+  .row {
+    display: grid;
+    grid-template-areas: "logo separador1 searchbar separador2 cuentcar";
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .searchBar {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .logo {
+    width: 23vw;
+  }
+}
+/* FOOTER */
+.footer {
+  background-color: #4b3939;
+  color: #fff;
+  font-weight: bold;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .redesP {
+  transition: transform 1s;
+}
+.footer .redesP:hover {
+  transform: scale(1.1, 1.1);
+}
+.footer .redesP .redes {
+  text-align: center;
+}
+
+/* PAGES */
+/* HOME */
+.Home {
+  display: flex;
+  align-items: center;
+}
+.Home .row2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  transition: transform 1s;
+}
+.Home .row2:hover {
+  transform: scale(1.05, 1.05);
+}
+.Home .row2 .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+@media (max-width: 991px) {
+  .Home .row2 .texto {
+    width: 100%;
+  }
+}
+@media (max-width: 381px) {
+  .Home .row2 .texto {
+    padding: 0;
+  }
+}
+.Home .row2 .h2Home {
+  font-family: "Public Sans", sans-serif;
+  font-size: 2rem;
+}
+.Home .row2 .pHome {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Home .row2 .divImgHome {
+  width: 100%;
+  max-width: 376px;
+}
+.Home .row2 .divImgHome .imgHome {
+  width: 100%;
+  height: auto;
+}
+
+/* CAROUSEL */
+.w-100 {
+  height: 23rem;
+  width: 70% !important;
+  text-align: center;
+  display: inline-block !important;
+}
+@media (max-width: 1024px) {
+  .w-100 {
+    height: 20rem;
+  }
+}
+@media (max-width: 950px) {
+  .w-100 {
+    height: 19rem;
+  }
+}
+@media (max-width: 850px) {
+  .w-100 {
+    height: 18rem;
+  }
+}
+@media (max-width: 800px) {
+  .w-100 {
+    height: 17rem;
+  }
+}
+@media (max-width: 767px) {
+  .w-100 {
+    width: 80% !important;
+  }
+}
+@media (max-width: 700px) {
+  .w-100 {
+    height: 16rem;
+  }
+}
+@media (max-width: 650px) {
+  .w-100 {
+    height: 15rem;
+  }
+}
+@media (max-width: 499px) {
+  .w-100 {
+    width: 100% !important;
+    height: 13rem;
+  }
+}
+@media (max-width: 400px) {
+  .w-100 {
+    height: 11rem;
+  }
+}
+
+/* PRODUCTOS */
+.rowProductos1, .rowProductos2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0.5rem;
+  transition: transform 1s;
+}
+.card:hover {
+  transform: scale(1.03, 1.03);
+}
+
+.colorBtn {
+  background-color: #5b605f;
+  color: #fff;
+}
+.colorBtn:hover {
+  background-color: rgba(46, 46, 46, 0.774);
+  color: #fff;
+}
+
+/* SUCURSALES */
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* CONTACTO */
+.horarios-numero {
+  background-color: rgba(68, 68, 68, 0.774);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0;
+}
+.horarios-numero .numero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+#form {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+#form .form {
+  width: 70%;
+}
+#form .form .mb-3 {
+  height: 80px;
+}
+#form .form .boton {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  background-color: #5b605f;
+  color: #fff;
+  font-weight: bold;
+}
+#form .form .boton:hover {
+  background-color: rgba(46, 46, 46, 0.774);
+  color: #fff;
+}
