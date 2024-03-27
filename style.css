@@ -17,6 +17,11 @@ body {
   width: 100%;
 }
 
+.headerClass {
+  display: grid;
+  grid-template-columns:1.23fr 1.7fr 0.3fr!important;
+}
+
 .h2Titulo {
   background-color: #4b3939;
   color: #fff;
@@ -37,6 +42,7 @@ body {
 /* HEADER */
 .container-fluid {
   background-size: 100%;
+  background-color: #4B3939;
 }
 
 .logo {
@@ -59,7 +65,7 @@ body {
   padding-top: 15px;
 }
 .ingreso :hover {
-  color: black;
+  color: #fff;
 }
 
 .miCuenta {
@@ -70,8 +76,19 @@ body {
 .miCuentaT {
   font-style: inherit;
   font-size: 1.5vw;
-  color: rgb(75, 75, 75);
+  font-weight: bolder;
+  color: #fff;
   text-decoration: none;
+}
+
+.icon1 {
+  width: 2vw;
+  height: 2vw;
+}
+
+.icon2 {
+  width: 2vw;
+  height: 2vw;
 }
 
 .miCarrito {
@@ -82,7 +99,8 @@ body {
 .miCarritoT {
   font-style: inherit;
   font-size: 1.5vw;
-  color: rgb(75, 75, 75);
+  font-weight: bolder;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -110,7 +128,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .separador1, .separador2, .miCuenta, .miCarritoT, .menuBar {
+  .separador1, .separador2, .menuBar {
     display: none;
   }
   .navbar {
@@ -133,13 +151,19 @@ body {
   .ingreso {
     text-align: center;
     padding: 0;
+    padding-top: 15px;
   }
   .searchBar {
     grid-area: searchbar;
   }
+
+  .h2Titulo {
+    background-color: #5b605f;;
+  }
+
   .row {
     display: grid;
-    grid-template-areas: "navbar logo logo micarrito" "searchbar searchbar searchbar searchbar";
+    grid-template-areas: "navbar searchbar micarrito";
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -172,16 +196,12 @@ body {
   }
   .row {
     display: grid;
-    grid-template-areas: "logo separador1 searchbar separador2 cuentcar";
+    grid-template-areas: "separador1 separador2 searchbar cuentcar";
   }
 }
 @media (min-width: 992px) {
   .navbar {
     display: none;
-  }
-  .searchBar {
-    padding-left: 30px;
-    padding-top: 15px;
   }
   .logo {
     width: 23vw;
