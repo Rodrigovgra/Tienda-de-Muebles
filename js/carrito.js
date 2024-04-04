@@ -5,6 +5,7 @@ productosCarrito = JSON.parse(productosCarrito);
 
 //Accedo a los elementos necesarios del DOM
 const carritoVacio = document.getElementById("carritoVacio");
+const footerCarrito = document.getElementById("footerCarrito");
 const contenedorProductos = document.getElementById("productos-carrito");
 const contenedorFunciones = document.getElementById("funciones-carrito");
 let productoCarritoEliminar = document.querySelectorAll(".producto-carrito-eliminar");
@@ -59,6 +60,7 @@ function subirProductosAlCarrito() {
         carritoVacio.classList.remove("disabled")
         contenedorProductos.classList.add("disabled");
         contenedorFunciones.classList.add("disabled");
+        footerCarrito.classList.add("footerCarrito");
     }
 }
 //llamado para subir los productos

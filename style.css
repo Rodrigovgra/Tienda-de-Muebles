@@ -263,9 +263,6 @@ a{
 
 /* FOOTER */
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   background: linear-gradient(to right, #413131, #6e5a5a);
   color: #fff;
   font-weight: bold;
@@ -680,4 +677,10 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   .funciones-carrito-vaciar {
     font-size: 0.6rem;
   }
+}
+
+.footerCarrito {
+  position: fixed; /* Fija la posición del footer */
+    bottom: 0; /* Lo coloca en la parte inferior de la ventana del navegador */
+    width: 100%; /* Ancho del footer al 100% del viewport */
 }
