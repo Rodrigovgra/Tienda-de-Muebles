@@ -12,8 +12,10 @@
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <!-- aos css -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- toastify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <!-- mi css -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
 </head>
 
@@ -84,18 +86,20 @@
 
             <!-- MI CUENTA, MI CARRITO -->
             <div class="ingreso col-lg-3">
-                <a href="miCuenta.html" class="miCuentaT">
+                <a href="micuenta.html" class="miCuentaT">
                     <div class="miCuenta">
                         <img  class="icon1" src="../img/icons8-persona-de-sexo-masculino-64.png" alt="persona">
-                        <p class="miCuentaT">Mi cuenta</p>
+                        <p class="miCuentaTx">Mi cuenta</p>
                     </div>
                 </a>
 
-                <a href="miCarrito.html" class="miCarritoT">
+                <a href="carrito.html" class="miCarritoT">
                     <div class="miCarrito">
-                        <img class="icon2" src="../img/icons8-carrito-de-compras-50.png" alt="carrito">
-                        <p class="miCarritoT">Mi carrito</p>
+                        <img class="icon2" src="../img/icons8-carrito-de-compras-50.png" alt="carrito"> 
+                        <span id="numero" class="numero">0</span>
+                        <p class="miCarritoTx">Mi carrito</p>
                     </div>
+                    
                 </a>
             </div>
         </div>
@@ -169,42 +173,8 @@
     </section>
 
     <section>
-      <div class="rowProductos1">
-        <div class="col-xl-4 col-md-4 col-sm-12">
-          <div class="card text-center">
-            <img src="../img/dobles-promociones.jpg" class="card-img-top" alt="promocion 1">
-            <div class="card-body">
-              <h3 class="card-title"> PROMOCIÓN 1 </h3>
-              <p class="card-text"> Juego Simple + Mesa </p>
-              <p class="card-text"> $70.000 </p>
-              <a href="#" class="btn colorBtn"> Agregar al Carrito </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-4 col-sm-12">
-          <div class="card text-center">
-            <img src="../img/promociones.jpeg1.jpeg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h3 class="card-title"> PROMOCIÓN 2 </h3>
-              <p class="card-text"> Juego Mixto </p>
-              <p class="card-text"> $90.000 </p>
-              <a href="#" class="btn colorBtn"> Agregar al Carrito </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-4 col-sm-12">
-          <div class="card text-center">
-            <img src="../img/simples.promociones.jpeg" class="card-img-top" alt="promocion 3">
-            <div class="card-body">
-              <h3 class="card-title"> PROMOCIÓN 3 </h3>
-              <p class="card-text"> Juego de Simples + Mesa</p>
-              <p class="card-text"> $90.000 </p>
-              <a href="#" class="btn colorBtn"> Agregar al Carrito </a>
-            </div>
-          </div>
-        </div>
+      <div id="rowPromociones">
+        <!-- JS -->
       </div>
     </section>
 
@@ -254,6 +224,11 @@
   <script>
     AOS.init();
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- MI JS -->
+  <script src="../js/main.js"></script>
+
 </body>
 
 </body>
