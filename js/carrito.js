@@ -1,6 +1,5 @@
-//Hago un llamado al carrito guardado en el localStorage
+//Hago un llamado al carrito guardado en el localStorage y le quito el formato JSON
 let productosCarrito = localStorage.getItem("productosEnCarrito");
-//le saco el formato JSON
 productosCarrito = JSON.parse(productosCarrito);
 
 //Accedo a los elementos necesarios del DOM
@@ -8,7 +7,6 @@ const carritoVacio = document.getElementById("carritoVacio");
 const footerCarrito = document.getElementById("footerCarrito");
 const contenedorProductos = document.getElementById("productos-carrito");
 const contenedorFunciones = document.getElementById("funciones-carrito");
-let productoCarritoEliminar = document.querySelectorAll(".producto-carrito-eliminar");
 const btnVaciarCarrito = document.getElementById("funciones-carrito-vaciar");
 const totalCarrito = document.getElementById("totalCarrito");
 const btnComprarCarrito = document.getElementById("funciones-carrito-comprar");
@@ -68,7 +66,7 @@ subirProductosAlCarrito()
 
 //Creo la funcion para asignarle un evento a los botones de eliminar del carrito
 function actualizarBotonesEliminar() {
-    productoCarritoEliminar = document.querySelectorAll(".producto-carrito-eliminar");
+    const productoCarritoEliminar = document.querySelectorAll(".producto-carrito-eliminar");
 
     productoCarritoEliminar.forEach(boton => {
         boton.addEventListener("click", eliminarDelCarrito);
@@ -88,7 +86,7 @@ function eliminarDelCarrito(e) {
                 text: "Producto Eliminado",
                 duration: 3000,
                 close: true,
-                gravity: "bottom",
+                gravity: "top",
                 position: "right",
                 stopOnFocus: true,
                 style: {
@@ -106,6 +104,25 @@ function eliminarDelCarrito(e) {
         } else {
             // Si la cantidad es 1 o menos, elimina el producto del carrito
             productosCarrito.splice(index, 1);
+            Toastify({
+                text: "Producto Eliminado",
+                duration: 3000,
+                close: true,
+                gravity: "top",
+                position: "right",
+                stopOnFocus: true,
+                style: {
+                    background: "linear-gradient(to left, #413131, #6e5a5a)",
+                    borderRadius: "0.375rem",
+                    textTransform: "uppercase",
+                    fontSize: ".75rem"
+                },
+                offset: {
+                    x: '1.5rem',
+                    y: '1.5rem'
+                },
+                onClick: function () { }
+            }).showToast();
         }
         //Llamo la funcion de subir al carrito para actualizar las tarjetas de los productos o actualizar los disabled en el caso de que el carrito este vacio
         subirProductosAlCarrito()
@@ -146,7 +163,7 @@ function vaciarCarrito() {
 //Funcion para actualizar el total del carrito mediante un reduce
 function actualizarTotal() {
     const total = productosCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    totalCarrito.innerText = `$${total}`;
+    totalCarrito.innerText = `Total: $${total}`;
 }
 
 //Agrego un evento el boton de comprar carrito
