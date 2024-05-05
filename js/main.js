@@ -2,7 +2,7 @@
 let productos = [];
 
 // Creo un fetch para traer el array almacenado en el json local
-fetch ("./js/productos.json")
+fetch ("js/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data;
