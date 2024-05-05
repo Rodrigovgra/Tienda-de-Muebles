@@ -3,8 +3,8 @@ let productos = [];
 
 // Creo un fetch para traer el array almacenado en el json local
 fetch ("js/productos.json")
-    .then((res) => res.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
         productos = data;
         subirProductos(productos);
     });
