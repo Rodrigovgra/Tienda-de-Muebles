@@ -1,81 +1,81 @@
 // Declaro un array para los productos
 let productos = [
     {
-        "id": 1,
-        "nombre": "Sillon Simple",
-        "descripcion":"Escandinavo color Lino",
-        "precio": 30000,
-        "img": "../img/simple.jpeg"
+        id: 1,
+        nombre: "Sillon Simple",
+        descripcion: "Escandinavo color Lino",
+        precio: 30000,
+        img: "../img/simple.jpeg"
     },
     {
-        "id": 2,
-        "nombre": "Cama 2 plazas",
-        "descripcion":"Madera de Paraíso",
-        "precio": 60000,
-        "img": "../img/cama.jpeg"
+        id: 2,
+        nombre: "Cama 2 plazas",
+        descripcion: "Madera de Paraíso",
+        precio: 60000,
+        img: "../img/cama.jpeg"
     },
     {
-        "id": 3,
-        "nombre": "Sillon Gervasoni",
-        "descripcion":"Gervasoni color Lino",
-        "precio": 40000,
-        "img": "../img/gervasonis.jpeg"
+        id: 3,
+        nombre: "Sillon Gervasoni",
+        descripcion: "Gervasoni color Lino",
+        precio: 40000,
+        img: "../img/gervasonis.jpeg"
     },
     {
-        "id": 4,
-        "nombre": "Mesa Chica",
-        "descripcion":"Madera de Paraíso",
-        "precio": 20000,
-        "img": "../img/mesachica.jpeg"
+        id: 4,
+        nombre: "Mesa Chica",
+        descripcion: "Madera de Paraíso",
+        precio: 20000,
+        img: "../img/mesachica.jpeg"
     },
     {
-        "id": 5,
-        "nombre": "Mesa",
-        "descripcion":"Madera de Roble",
-        "precio": 30000,
-        "img": "../img/mesa.jpeg"
+        id: 5,
+        nombre: "Mesa",
+        descripcion: "Madera de Roble",
+        precio: 30000,
+        img: "../img/mesa.jpeg"
     },
     {
-        "id": 6,
-        "nombre": "Mesa Ratona",
-        "descripcion":"Madera de Arce",
-        "precio": 30000,
-        "img": "../img/Mesa-ratona.jpg"
+        id: 6,
+        nombre: "Mesa Ratona",
+        descripcion: "Madera de Arce",
+        precio: 30000,
+        img: "../img/Mesa-ratona.jpg"
     },
     {
-        "id": 7,
-        "nombre": "Sillon Simple",
-        "descripcion":"Escandinavo color azul",
-        "precio": 25000,
-        "img": "../img/Simple-2.jpeg"
+        id: 7,
+        nombre: "Sillon Simple",
+        descripcion: "Escandinavo color azul",
+        precio: 25000,
+        img: "../img/Simple-2.jpeg"
     },
     {
-        "id": 8,
-        "nombre": "Mesa Blanca",
-        "descripcion":"Madera de Pino",
-        "precio": 30000,
-        "img": "../img/Mesa-blanca.jpg"
+        id: 8,
+        nombre: "Mesa Blanca",
+        descripcion: "Madera de Pino",
+        precio: 30000,
+        img: "../img/Mesa-blanca.jpg"
     },
     {
-        "id": 9,
-        "nombre": "Juego Simple + Mesa",
-        "descripcion":"PROMOCIÓN 1",
-        "precio": 70000,
-        "img": "../img/dobles-promociones.jpg"
+        id: 9,
+        nombre: "Juego Simple + Mesa",
+        descripcion: "PROMOCIÓN 1",
+        precio: 70000,
+        img: "../img/dobles-promociones.jpg"
     },
     {
-        "id": 10,
-        "nombre": "Juego Mixto",
-        "descripcion":"PROMOCIÓN 2",
-        "precio": 90000,
-        "img": "../img/promociones.jpeg1.jpeg"
+        id: 10,
+        nombre: "Juego Mixto",
+        descripcion: "PROMOCIÓN 2",
+        precio: 90000,
+        img: "../img/promociones.jpeg1.jpeg"
     },
     {
-        "id": 11,
-        "nombre": "Juego de Simples + Mesa",
-        "descripcion":"PROMOCIÓN 3",
-        "precio": 90000,
-        "img": "../img/simples.promociones.jpeg"
+        id: 11,
+        nombre: "Juego de Simples + Mesa",
+        descripcion: "PROMOCIÓN 3",
+        precio: 90000,
+        img: "../img/simples.promociones.jpeg"
     }
 ];
 
